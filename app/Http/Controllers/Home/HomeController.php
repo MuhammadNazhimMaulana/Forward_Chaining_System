@@ -7,7 +7,19 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index()
+    // Home For Admin
+    public function home_admin()
+    {
+
+        $data = [
+            "title" => "Home",
+        ];
+
+        return view('Home/home', $data);
+    }
+
+    // Home For Admin
+    public function home_user()
     {
 
         $data = [

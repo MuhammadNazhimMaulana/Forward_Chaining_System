@@ -20,7 +20,7 @@
     <!-- Bootstrap CSS -->
     <link href="{{ asset('bootstrap/css/bootstrap-theme.min.css') }}" rel="stylesheet">
 
-    <title>Manajemen Puskesmas</title>
+    <title>Prediksi Penyakit</title>
   </head>
   <body>
     <div class="container">

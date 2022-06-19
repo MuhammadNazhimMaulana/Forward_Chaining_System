@@ -190,7 +190,10 @@
 				</h4>
 			</div>
 			<div class="modal-footer">
-				<a class="btn btn-outline-primary" href="#" role="button">Ya</a>
+				<form action="/logout" method="POST">
+					@csrf
+					<button class="btn btn-outline-primary" type="submit">Ya {{ auth()->user()->name }}</button>
+				</form>
 				<a class="btn text-light btn-danger" href="#" data-dismiss="modal" role="button">Tidak</a>
 			</div>
 		</div>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home\{HomeController};
+use App\Http\Controllers\Auth\{AuthController};
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,18 @@ use App\Http\Controllers\Home\{HomeController};
 //     return view('welcome');
 // });
 
-Route::middleware('guest')->prefix('home')->group(function () {
-    Route::get('/', [HomeController::class, 'index']);
+// Auth
+Route::middleware('guest')->prefix('auth')->group(function () {
+    // Login
+    Route::get('/', [AuthController::class, 'login']);
+});
+
+// Process Login
+Route::post('auth/login', [AuthController::class, 'authLogin']);
+Route::post('/logout', [AuthController::class, 'logout']);
+
+// Home
+Route::prefix('home')->group(function () {
+    // Home
+    Route::get('/', [HomeController::class, 'home_admin']);
 });
