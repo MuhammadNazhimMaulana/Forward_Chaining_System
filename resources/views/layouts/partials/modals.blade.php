@@ -178,7 +178,7 @@
 	</div>
 </div>
 
-
+@auth
 <div class="modal fade" id="mod-logout">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -199,3 +199,4 @@
 		</div>
 	</div>
 </div>
+@endauth

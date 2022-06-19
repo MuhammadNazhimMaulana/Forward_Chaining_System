@@ -23,19 +23,18 @@
     <title>Prediksi Penyakit</title>
   </head>
   <body>
-    <div class="container">
+    
+    <div style="height: 100%;" class="align-content-between container bg-light">
         {{-- Navbar --}}
-        @include('layouts/partials.navbar_admin')
+        @include('layouts/partials.navbar_user')
         
         {{-- Cards --}}
-        @include('layouts/partials.cards')
-
-        {{-- Cards --}}
         @include('layouts/partials.modals')
-
+    
         {{-- Content --}} 
         @yield('container')
     </div>
+
 
 
     {{-- Jquery --}}

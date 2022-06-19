@@ -15,7 +15,7 @@ class HomeController extends Controller
             "title" => "Home",
         ];
 
-        return view('Home/home', $data);
+        return view('Home/home_admin', $data);
     }
 
     // Home For Admin
@@ -26,6 +26,6 @@ class HomeController extends Controller
             "title" => "Home",
         ];
 
-        return view('Home/home', $data);
+        return view('Home/home_user', $data);
     }
 }

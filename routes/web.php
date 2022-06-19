@@ -29,8 +29,14 @@ Route::middleware('guest')->prefix('auth')->group(function () {
 Route::post('auth/login', [AuthController::class, 'authLogin']);
 Route::post('/logout', [AuthController::class, 'logout']);
 
-// Home
+// Home Admin
 Route::prefix('home')->group(function () {
     // Home
     Route::get('/', [HomeController::class, 'home_admin']);
+});
+
+// Home Admin
+Route::prefix('user')->group(function () {
+    // Home
+    Route::get('/home', [HomeController::class, 'home_user']);
 });
