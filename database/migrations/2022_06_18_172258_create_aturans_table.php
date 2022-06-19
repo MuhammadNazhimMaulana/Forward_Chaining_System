@@ -15,6 +15,9 @@ class CreateAturansTable extends Migration
     {
         Schema::create('aturans', function (Blueprint $table) {
             $table->id();
+            $table->string('kode_gejala');
+            $table->string('jika_ya');
+            $table->string('jika_tidak');
             $table->timestamps();
         });
     }

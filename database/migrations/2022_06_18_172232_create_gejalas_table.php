@@ -15,6 +15,11 @@ class CreateGejalasTable extends Migration
     {
         Schema::create('gejalas', function (Blueprint $table) {
             $table->id();
+            $table->string('kode_gejala')->unique()->index();
+            $table->string('nama_gejala');
+            $table->longText('penyebab_gejala');
+            $table->longText('solusi_gejala');
+            $table->longText('gambar_gejala');
             $table->timestamps();
         });
     }

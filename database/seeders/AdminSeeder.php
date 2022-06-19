@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Models\Admin;
 
 class AdminSeeder extends Seeder
 {
@@ -13,6 +14,10 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Admin::create([
+            'username' => 'admin',
+            'password' => bcrypt('demodemo123'),
+            'hint' => 'coce'
+        ]);
     }
 }

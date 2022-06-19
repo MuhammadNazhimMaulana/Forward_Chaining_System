@@ -15,6 +15,9 @@ class CreateKonsultasisTable extends Migration
     {
         Schema::create('konsultasis', function (Blueprint $table) {
             $table->id();
+            $table->string('pengguna');
+            $table->string('waktu');
+            $table->longText('kesimpulan');
             $table->timestamps();
         });
     }

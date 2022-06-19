@@ -1,0 +1,43 @@
+html,body{
+	height: 100%;
+	background: #e8e8e8;
+}
+div.menu{
+	box-shadow: 2px 2px 4px grey;
+	font-size: 16pt;
+	text-align: center;
+	padding:20px;
+	transition:0.5s;
+	background: white;
+	border-radius: 10px;
+}
+div.menu a{
+	color:maroon;
+}
+div.menu:hover{
+	box-shadow: 0px 0px 0px;
+}
+.ts{
+
+	margin:-20px;
+	padding-top:10px;
+	border-radius: 10px 10px 0px 0px;
+}
+div.menu div i
+{
+	transition: 1s;
+}
+div.menu div i:hover
+{
+	font-size:26px;
+}
+.us-menu
+{
+	border-radius: 200px;
+	text-align: center;
+	height: 150px;
+	width: 150px;
+}
+a:hover{
+text-decoration: none;
+}
