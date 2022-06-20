@@ -45,6 +45,11 @@ Route::prefix('home')->group(function () {
         Route::get('/', [GejalaController::class, 'index']);
     });
 
+    // CRUD Penyakit
+    Route::prefix('penyakit')->group(function () {
+        Route::get('/', [PenyakitController::class, 'index']);
+    });
+
 });
 
 // Home Admin

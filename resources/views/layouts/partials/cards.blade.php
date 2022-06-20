@@ -6,7 +6,7 @@
                 Data Gejala <hr>
             </div>
             <div>
-                <a href="#"> Pilih </a>
+                <a href="/home/gejala"> Pilih </a>
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@
                 Penyakit <hr>
             </div>
             <div>
-                <a href="#"> Pilih </a>
+                <a href="/home/penyakit"> Pilih </a>
             </div>
         </div>
     </div>

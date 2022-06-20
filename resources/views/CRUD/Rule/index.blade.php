@@ -3,7 +3,7 @@
 @section('container')
 
 <div style="padding:20px;background: white;">
-    <h3 class="text-left text-primary"><i class="fa fa-list"></i> TABEL GEJALA</h3><hr>
+    <h3 class="text-left text-primary"><i class="fa fa-list"></i> TABEL RULE</h3><hr>
     <hr>
         <div class="tittle">
             <a class="btn btn-outline-primary" href="#tambah_rule" data-toggle='modal' role="button">Tambah Rule</a>
