@@ -34,7 +34,9 @@
         @include('layouts/partials.modals')
 
         {{-- Content --}} 
-        @yield('container')
+        <div style="background:#faf8f8;margin-top:20px;padding:10px">
+          @yield('container')
+        </div>
     </div>
 
 

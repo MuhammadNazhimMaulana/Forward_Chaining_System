@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home\{HomeController};
 use App\Http\Controllers\Auth\{AuthController};
+use App\Http\Controllers\CRUD\{RuleController, PenyakitController, GejalaController};
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,17 @@ Route::post('/logout', [AuthController::class, 'logout']);
 Route::prefix('home')->group(function () {
     // Home
     Route::get('/', [HomeController::class, 'home_admin']);
+
+    // CRUD Rule
+    Route::prefix('rule')->group(function () {
+        Route::get('/', [RuleController::class, 'index']);
+    });
+
+    // CRUD Gejala
+    Route::prefix('gejala')->group(function () {
+        Route::get('/', [GejalaController::class, 'index']);
+    });
+
 });
 
 // Home Admin

@@ -178,6 +178,46 @@
 	</div>
 </div>
 
+<!-- tambah rule -->
+<div class="modal fade" id="tambah_rule">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Tambah Rule</h4>
+			</div>
+			<div class="modal-body">
+				<form action="" method="POST" enctype="multipart/form-data">	
+					<div class="form-group">
+						<label for=""><i class="fa fa-code"></i> Kode Gejala</label>
+						<select name="gejala" class="form-control">
+							<option>--Pilih Kode Gejala</option>
+						</select>
+					</div>	
+					<div class="form-group">
+						<label for=""><i class="fa fa-link"></i> Link Jika Ya / Tidak</label>
+						<select name="ya" class="form-control">
+							<option>--Link Jika Ya</option>
+						</select>
+					</div>	
+					<div class="form-group">
+						<label for=""><i class="fa fa-link"></i> Link Jika Ya / Tidak</label>
+						<select name="tidak" class="form-control">
+							<option>--Link Jika Tidak</option>
+							<option value="-">-</option>
+						</select>
+					</div>		
+				
+					<button type="submit" class="btn btn-outline-success">Simpan</button>
+					<button data-dismiss="modal" class="btn btn-outline-danger">Batal</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+</div>
+
+{{-- Log out --}}
 @auth
 <div class="modal fade" id="mod-logout">
 	<div class="modal-dialog">

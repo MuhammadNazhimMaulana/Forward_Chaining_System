@@ -14,10 +14,10 @@
         <div class="menu" >
             <div class="bg-success text-light ts">
                 <i class="fas fa-plus fa-2x"></i><br>
-                Tambah Gejala <hr>
+                Gejala <hr>
             </div>
             <div>
-                <a href="#tbh_gejala" data-toggle="modal"> Pilih </a>
+                <a href="/home/gejala"> Pilih </a>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
                 Rule <hr>
             </div>
             <div>
-                <a href="#"> Pilih </a>
+                <a href="/home/rule"> Pilih </a>
             </div>
         </div>
     </div>
