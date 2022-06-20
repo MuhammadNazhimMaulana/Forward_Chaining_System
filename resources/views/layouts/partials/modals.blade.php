@@ -33,6 +33,7 @@
 			</div>
 			<div class="modal-body">
 				<form action="#" method="POST" enctype="multipart/form-data">
+					@csrf
 					<div class="form-group">
 						<label for=""><i class="fa fa-code"></i> Kode Gejala</label>
 						<input type="text" name="kd_gejala" class="form-control" id="" placeholder="Contoh:Gxxxxxxx">
@@ -51,7 +52,7 @@
 					</div>			 -->					
 					<div class="form-group">
 						<label for=""> <i class="fa fa-camera"></i> Gambar Gejala</label><br>
-						<input type="file" class="form=control" name="gb_gejala">
+						<input type="file" class="form-control" name="gb_gejala">
 					</div><hr>
 				
 					
@@ -145,27 +146,28 @@
 				<h4 class="modal-title">Tambah Data Penyakit</h4>
 			</div>
 			<div class="modal-body">
-				<form action="#" method="POST" role="form" enctype="multipart/form-data">
+				<form action="/home/penyakit" method="POST" role="form" enctype="multipart/form-data">
+					@csrf
 					<div class="form-group">
 						<label for=""><i class="fa fa-code"></i> Kode Penyakit</label>
-						<input type="text" name="kdPenyakit" class="form-control" id="" placeholder="Contoh:Gxxxxxxx">
+						<input type="text" name="kode_penyakit" class="form-control" id="" placeholder="Contoh:Gxxxxxxx">
 					</div>				
 					<div class="form-group">
 						<label for=""> <i class="fa fa-list"></i> Nama Penyakit</label>
-						<input type="text" name="nmPenyakit" class="form-control" id="" >
+						<input type="text" name="nama_penyakit" class="form-control" id="" >
 					</div>				
 					<div class="form-group">
 						<label for=""> <i class="fa fa-list"></i> Penyebab Penyakit</label>
-						<input type="text" name="penyebab" class="form-control" id="" >
+						<input type="text" name="penyebab_penyakit" class="form-control" id="" >
 					</div>			
 					<div class="form-group">
 						<label for=""> <i class="fa fa-list"></i> Solusi Penyakit</label>
-						<textarea class="form-control" name="solusi"></textarea>
+						<textarea class="form-control" name="solusi_penyakit"></textarea>
 					</div>
 								
 					<div class="form-group">
 						<label for=""> <i class="fa fa-camera"></i> Gambar Penyakit</label><br>
-						<input type="file" class="form-control" name="gambarPenyakit">
+						<input type="file" class="form-control" name="gambar_penyakit">
 					</div><hr>
 					<button type="submit" class="btn btn-outline-success"><i class="fa fa-check"></i> Simpan</button>
 					<button data-dismiss="modal" class="btn btn-outline-danger">Batal</button>

@@ -48,6 +48,9 @@ Route::prefix('home')->group(function () {
     // CRUD Penyakit
     Route::prefix('penyakit')->group(function () {
         Route::get('/', [PenyakitController::class, 'index']);
+        Route::post('/', [PenyakitController::class, 'store_penyakit']);
+        Route::put('/update/{id}', [PenyakitController::class, 'update_penyakit']);
+        Route::delete('/delete/{id}', [PenyakitController::class, 'delete_penyakit']);
     });
 
 });
