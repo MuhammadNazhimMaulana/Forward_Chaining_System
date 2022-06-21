@@ -38,6 +38,9 @@ Route::prefix('home')->group(function () {
     // CRUD Rule
     Route::prefix('rule')->group(function () {
         Route::get('/', [RuleController::class, 'index']);
+        Route::post('/', [RuleController::class, 'store_rule']);
+        Route::put('/update/{id}', [RuleController::class, 'update_rule']);
+        Route::delete('/delete/{id}', [RuleController::class, 'delete_rule']);
     });
 
     // CRUD Gejala

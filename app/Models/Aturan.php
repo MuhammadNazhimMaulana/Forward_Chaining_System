@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Aturan extends Model
 {
     use HasFactory;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'kode_gejala',
+        'jika_ya',
+        'jika_tidak'
+    ];
 }

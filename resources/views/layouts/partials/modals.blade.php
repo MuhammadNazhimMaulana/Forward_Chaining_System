@@ -63,77 +63,6 @@
 	</div>
 </div>
 
-<!-- tambah rule -->
-{{-- <div class="modal fade" id="tambah_rule">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h4 class="modal-title">Tambah Rule</h4>
-			</div>
-			<div class="modal-body">
-				<form action="#" method="POST" enctype="multipart/form-data">	
-					<div class="form-group">
-						<label for=""><i class="fa fa-code"></i> Kode Gejala</label>
-						<select name="gejala" class="form-control">
-							<option>--Pilih Kode Gejala</option>
-
-							<?php $gej=$this->db->query("SELECT * FROM tbgejala");
-							foreach($gej->result_array() as $g):
-
-							?>
-							<option value="<?= $g['kd_gejala']?>"><?= $g['kd_gejala']."-".$g['nm_gejala']  ?></option>
-							<?php  endforeach; ?>
-						</select>
-					</div>	
-					<div class="form-group">
-						<label for=""><i class="fa fa-link"></i> Link Jika Ya / Tidak</label>
-						<select name="ya" class="form-control">
-							<option>--Link Jika Ya</option>
-
-							<?php $gej=$this->db->query("SELECT * FROM tbgejala");
-							foreach($gej->result_array() as $g):
-
-							?>
-							<option  value="<?= $g['kd_gejala']?>"><?= $g['kd_gejala']."-".$g['nm_gejala']  ?></option>
-							<?php  endforeach; ?>
-							<?php $pen=$this->db->query("SELECT * FROM tbpenyakit");
-							foreach($pen->result_array() as $p):
-
-							?>
-							<option  value="<?= $p['kodePenyakit']?>"><?= $p['kodePenyakit']."-".$p['namaPenyakit']  ?></option>
-							<?php  endforeach; ?>
-						</select>
-					</div>	
-					<div class="form-group">
-						<label for=""><i class="fa fa-link"></i> Link Jika Ya / Tidak</label>
-						<select name="tidak" class="form-control">
-							<option>--Link Jika Tidak</option>
-							<option value="-">-</option>
-							<?php $gej=$this->db->query("SELECT * FROM tbgejala");
-							foreach($gej->result_array() as $g):
-
-							?>
-							<option  value="<?= $g['kd_gejala']?>"><?= $g['kd_gejala']."-".$g['nm_gejala']  ?></option>
-							<?php  endforeach; ?>
-							<?php $pen=$this->db->query("SELECT * FROM tbpenyakit");
-							foreach($pen->result_array() as $p):
-
-							?>
-							<option  value="<?= $p['kodePenyakit']?>"><?= $p['kodePenyakit']."-".$p['namaPenyakit']  ?></option>
-							<?php  endforeach; ?>
-						</select>
-					</div>		
-				
-					<button type="submit" class="btn btn-outline-success">Simpan</button>
-					<button data-dismiss="modal" class="btn btn-outline-danger">Batal</button>
-				</form>
-			</div>
-			<div class="modal-footer">
-			</div>
-		</div>
-	</div>
-</div> --}}
-
 <!-- tambah penyakit -->
 <div class="modal fade" id="tambahPenyakit">
 	<div class="modal-dialog">
@@ -171,45 +100,6 @@
 			</div>
 			<div class="modal-footer">
 				copyright@universitasHamzanwadi
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- tambah rule -->
-<div class="modal fade" id="tambah_rule">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h4 class="modal-title">Tambah Rule</h4>
-			</div>
-			<div class="modal-body">
-				<form action="" method="POST" enctype="multipart/form-data">	
-					<div class="form-group">
-						<label for=""><i class="fa fa-code"></i> Kode Gejala</label>
-						<select name="gejala" class="form-control">
-							<option>--Pilih Kode Gejala</option>
-						</select>
-					</div>	
-					<div class="form-group">
-						<label for=""><i class="fa fa-link"></i> Link Jika Ya / Tidak</label>
-						<select name="ya" class="form-control">
-							<option>--Link Jika Ya</option>
-						</select>
-					</div>	
-					<div class="form-group">
-						<label for=""><i class="fa fa-link"></i> Link Jika Ya / Tidak</label>
-						<select name="tidak" class="form-control">
-							<option>--Link Jika Tidak</option>
-							<option value="-">-</option>
-						</select>
-					</div>		
-				
-					<button type="submit" class="btn btn-outline-success">Simpan</button>
-					<button data-dismiss="modal" class="btn btn-outline-danger">Batal</button>
-				</form>
-			</div>
-			<div class="modal-footer">
 			</div>
 		</div>
 	</div>

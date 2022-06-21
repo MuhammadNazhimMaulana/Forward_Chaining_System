@@ -94,6 +94,71 @@
     </table>	
 </div>
 
+<!-- tambah rule -->
+<div class="modal fade" id="tambah_rule">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Tambah Rule</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/home/rule" method="POST" enctype="multipart/form-data">
+                    @csrf	
+					<div class="form-group">
+						<label for=""><i class="fa fa-code"></i> Kode Gejala</label>
+						<select name="kode_gejala" class="form-control">
+							<option>--Pilih Kode Gejala</option>
+
+                            {{-- Getting Code Of Symptoms --}}
+							@foreach ($symptoms as $data)
+							<option value="{{ $data->kode_gejala }}">{{ $data->kode_gejala }}</option>
+							@endforeach
+
+						</select>
+					</div>	
+					<div class="form-group">
+						<label for=""><i class="fa fa-link"></i> Link Jika Ya / Tidak</label>
+						<select name="jika_ya" class="form-control">
+							<option>--Link Jika Ya</option>
+
+                            {{-- Getting Code Of Symptoms --}}
+							@foreach ($symptoms as $data)
+							<option value="{{ $data->kode_gejala }}">{{ $data->kode_gejala }}</option>
+							@endforeach
+                            
+                            {{-- Getting Code Of Illness --}}
+							@foreach ($illness as $penyakit)
+							<option value="{{ $penyakit->kode_penyakit }}">{{ $penyakit->kode_penyakit }}</option>
+							@endforeach
+						</select>
+					</div>	
+					<div class="form-group">
+						<label for=""><i class="fa fa-link"></i> Link Jika Ya / Tidak</label>
+						<select name="jika_tidak" class="form-control">
+							<option>--Link Jika Tidak</option>
+							<option value="-">-</option>
+
+                            {{-- Getting Code Of Symptoms --}}
+							@foreach ($symptoms as $data)
+							<option value="{{ $data->kode_gejala }}">{{ $data->kode_gejala }}</option>
+							@endforeach
+
+                            {{-- Getting Code Of Illness --}}
+							@foreach ($illness as $penyakit)
+							<option value="{{ $penyakit->kode_penyakit }}">{{ $penyakit->kode_penyakit }}</option>
+							@endforeach
+						</select>
+					</div>		
+				
+					<button type="submit" class="btn btn-outline-success">Simpan</button>
+					<button data-dismiss="modal" class="btn btn-outline-danger">Batal</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+</div>
 
 @endsection
 
