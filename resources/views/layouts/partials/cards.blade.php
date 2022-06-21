@@ -1,4 +1,4 @@
-<div class="row cont" style="margin-top:15px;">
+<div class="row cont justify-content-center" style="margin-top:15px;">
     <div class="col-lg-3">
         <div class="menu" >
             <div class="bg-primary text-light ts">
@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-3">
+    {{-- <div class="col-lg-3">
         <div class="menu" >
             <div class="bg-success text-light ts">
                 <i class="fas fa-plus fa-2x"></i><br>
@@ -20,7 +20,7 @@
                 <a href="/home/gejala"> Pilih </a>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="col-lg-3">
         <div class="menu" >
             <div class="bg-danger text-light ts">

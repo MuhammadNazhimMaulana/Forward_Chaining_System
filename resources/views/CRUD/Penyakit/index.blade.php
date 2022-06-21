@@ -14,14 +14,14 @@
         </div>
         @endif
         
-        {{-- Tampilan Berhasil Tambah Data --}}
+        {{-- Tampilan Berhasil Update Data --}}
         @if(session()->has('success_update'))
         <div class="alert alert-success alert-dismissable fade show" role="alert">
             {{ session('success_update') }}
         </div>
         @endif
 
-        {{-- Tampilan Berhasil Update Data --}}
+        {{-- Tampilan Berhasil Tambah Data --}}
         @if(session()->has('success_create'))
         <div class="alert alert-success alert-dismissable fade show" role="alert">
             {{ session('success_create') }}
@@ -53,7 +53,7 @@
                 <td>
                     {{-- <a href="#g_" data-toggle="modal"> --}}
                     <img width="50px" src="{{ asset('storage/'.$data->gambar_penyakit) }}">
-                    </a>
+                    {{-- </a> --}}
                 </td>
                 <td>
                     <a class="btn btn-success" data-toggle="modal" href="#hapus{{ $data->id }}" >

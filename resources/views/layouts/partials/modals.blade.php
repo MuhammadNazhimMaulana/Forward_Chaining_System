@@ -25,34 +25,30 @@
 </div>
 
 <!-- tambah gejala -->
-<div class="modal fade" id="tbh_gejala">
+<div class="modal fade" id="tambahGejala">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
 				<h4 class="modal-title">Tambah Data Gejala</h4>
 			</div>
 			<div class="modal-body">
-				<form action="#" method="POST" enctype="multipart/form-data">
+				<form action="/home/gejala" method="POST" enctype="multipart/form-data">
 					@csrf
 					<div class="form-group">
 						<label for=""><i class="fa fa-code"></i> Kode Gejala</label>
-						<input type="text" name="kd_gejala" class="form-control" id="" placeholder="Contoh:Gxxxxxxx">
+						<input type="text" name="kode_gejala" class="form-control" id="" placeholder="Contoh:Gxxxxxxx">
 					</div>				
 					<div class="form-group">
 						<label for=""> <i class="fa fa-list"></i> Nama Gejala</label>
-						<input type="text" name="nm_gejala" class="form-control" id="" placeholder="Contoh:Gxxxxxxx">
-					</div>			
-					<!-- <div class="form-group">
-						<label for=""> <i class="fa fa-list"></i> Penyebab Gejala</label>
-						<input type="text" name="penyebab" class="form-control" id="" placeholder="Contoh:Gxxxxxxx">
+						<input type="text" name="nama_gejala" class="form-control" id="" placeholder="Contoh:Gxxxxxxx">
 					</div>		
-					<div class="form-group">
-						<label for=""> <i class="fa fa-list"></i> Solusi Gejala</label>
-						<input type="text" name="solusi" class="form-control" id="" placeholder="Contoh:Gxxxxxxx">
-					</div>			 -->					
+						{{--Beginning Of Hidden Input  --}}
+						<input type="hidden" name="penyebab_gejala" class="form-control" id="" value="-">
+						<input type="hidden" name="solusi_gejala" class="form-control" id="" value="-">				
+						{{--End Of Hidden Input  --}}
 					<div class="form-group">
 						<label for=""> <i class="fa fa-camera"></i> Gambar Gejala</label><br>
-						<input type="file" class="form-control" name="gb_gejala">
+						<input type="file" class="form-control" name="gambar_gejala">
 					</div><hr>
 				
 					

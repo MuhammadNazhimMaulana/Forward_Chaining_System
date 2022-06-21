@@ -43,6 +43,9 @@ Route::prefix('home')->group(function () {
     // CRUD Gejala
     Route::prefix('gejala')->group(function () {
         Route::get('/', [GejalaController::class, 'index']);
+        Route::post('/', [GejalaController::class, 'store_gejala']);
+        Route::put('/update/{id}', [GejalaController::class, 'update_gejala']);
+        Route::delete('/delete/{id}', [GejalaController::class, 'delete_gejala']);
     });
 
     // CRUD Penyakit
