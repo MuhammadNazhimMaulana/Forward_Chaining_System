@@ -29,19 +29,19 @@ php artisan migrate
 ```
 
 <br>
-Lalu jangan lupa untuk melakukan seeding database setelah berhasil melakukan migrasi
-<br><br>
-
-```
-php artisan db:seed
-```
-
-<br>
 Setelah itu silakan juga jalankan perintah 
 <br><br>
 
 ```
 php artisan storage:link
+```
+
+<br>
+Sebagai Catatan, sebelum melakukan migrasi silakan terlebih dahulu membuat folder dengan nama Foto Gejala dan Foto Penyakit di dalam folder storage. Lalu jangan lupa untuk melakukan seeding database setelah berhasil melakukan migrasi dan storage link.
+<br><br>
+
+```
+php artisan db:seed
 ```
 
 <br>
