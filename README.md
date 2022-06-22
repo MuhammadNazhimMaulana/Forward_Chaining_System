@@ -51,3 +51,11 @@ Untuk menjalankan app silakan masukkan perintah
 ```
 php artisan serve
 ```
+
+<br>
+Apabila terjadi error saat mengakses url yang diberikan oleh laravel dan meminta seperti key maka silakan jalankan perintah berikut ini:
+<br><br>
+
+```
+php artisan key:generate
+```
