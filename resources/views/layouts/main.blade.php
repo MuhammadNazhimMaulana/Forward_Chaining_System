@@ -37,8 +37,12 @@
         <div style="background:#faf8f8;margin-top:20px;padding:10px">
           @yield('container')
         </div>
+        
+        <div class="text-right" style="margin-top:2px;background:#faf8f8;color:grey">
+          <p style="padding-right: 20px;padding:10px;"></p>
+        </div>
     </div>
-
+    
 
     {{-- Jquery --}}
     <script src="{{ asset('jquery.slim.min.js') }}"></script>

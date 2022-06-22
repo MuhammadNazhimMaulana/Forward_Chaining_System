@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Gejala;
-use Illuminate\Support\Facades\Storage;
 
 class GejalaSeeder extends Seeder
 {

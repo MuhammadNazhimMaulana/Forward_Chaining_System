@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Konsultasi;
 
 class KonsultasiSeeder extends Seeder
 {
@@ -13,6 +14,28 @@ class KonsultasiSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Konsultasi::create([
+            'pengguna' => 'Hambali',
+            'waktu' => '10-06-2021',
+            'kesimpulan' => 'Penyakit Jagung Dari Hamsul Hadi mengalami penyakit Kekurangan Nitrogen (N) yang di sebabkan oleh Kekurangan Nitrogen (N), penanggulangan bisa dilakukan dengan cara',
+        ]);
+
+        Konsultasi::create([
+            'pengguna' => 'saya',
+            'waktu' => '07-06-2021',
+            'kesimpulan' => 'Tanaman Jagung mengalami penyakit Hawar Daun, yang di sebabkan oleh Jamur Helminthosporium\r\nturcicum, penanggulangan bisa dilakukan dengan cara',
+        ]);
+        
+        Konsultasi::create([
+            'pengguna' => 'parhan',
+            'waktu' => '07-06-2021',
+            'kesimpulan' => 'Tanaman Jagung mengalami penyakit Gosong, yang di sebabkan oleh Jamur Ustilago maydis\r\n, penanggulangan bisa dilakukan dengan cara',
+        ]);
+
+        Konsultasi::create([
+            'pengguna' => 'aku',
+            'waktu' => '07-06-2021',
+            'kesimpulan' => 'Tanaman Jagung mengalami penyakit Gosong, yang di sebabkan oleh Jamur Ustilago maydis\r\n, penanggulangan bisa dilakukan dengan cara',
+        ]);
     }
 }

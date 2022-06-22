@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home\{HomeController};
+use App\Http\Controllers\User\{UserController};
 use App\Http\Controllers\Auth\{AuthController};
 use App\Http\Controllers\CRUD\{RuleController, PenyakitController, GejalaController};
 
@@ -65,4 +66,7 @@ Route::prefix('home')->group(function () {
 Route::prefix('user')->group(function () {
     // Home
     Route::get('/home', [HomeController::class, 'home_user']);
+
+    // Konsultasi 
+    Route::post('/konsultasi', [UserController::class, 'konsultasi']);
 });

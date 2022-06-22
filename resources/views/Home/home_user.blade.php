@@ -6,7 +6,13 @@
 	<div class="row">
 		<div  style="margin: auto;" class="us-menu text-light p-4 bg-primary">
 			<img src="{{ asset('img/konsul.png') }}" width="80px" class="img-responsive" alt="Image">
-			<a href="?hal=konsultasi&kode=G01" class="text-light"><h5 class="title">Konsultasi</h5></a>
+			<form action="/user/konsultasi" method="POST" role="form">
+				@csrf
+				{{-- Hidden Input --}}
+				<input type="hidden" name="kode_gejala" value="G01">
+
+				<button type="submit" class="btn bg-transparent text-light"><h5 class="title">Konsul</h5></button>
+			</form>
 		</div>
 	</div>
 	<div class="mid row">
