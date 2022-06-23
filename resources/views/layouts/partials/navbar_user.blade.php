@@ -11,6 +11,6 @@
   </nav>
   <div class="container text-info">
       <a href="/user/home" class="text-info"><i class="fa pt-3 fa-home"></i> Beranda</a> ||
-      <a href="" class="text-info"><i class="fa pt-3 fa-comment"></i> Hasil Konsul</a>
+      <a href="/user/konsultasi" class="text-info"><i class="fa pt-3 fa-comment"></i> Hasil Konsul</a>
   </div>
   <hr>

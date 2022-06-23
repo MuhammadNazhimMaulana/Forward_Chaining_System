@@ -35,14 +35,15 @@
                             <h4 class="modal-title">Simpan Hasil Konsultasi</h4>
                         </div>
                         <div class="modal-body">
-                            <form action="#" method="POST" enctype="multipart/form-data">
+                            <form action="/user/konsultasi-save" method="POST" enctype="multipart/form-data">
+                                @csrf
                                 <legend>Masukkan Nama Anda</legend>
                                 <hr>
                                 <div class="form-group">
-                                    <input type="hidden" value="" name="kode_penyakit">
-                                    <input type="hidden" value="" name="nama_penyakit">
-                                    <input type="hidden" value="" name="penyebab_penyakit">
-                                    <input type="hidden" value="" name="solusi_penyakit">
+                                    <input type="hidden" value="{{ $illness->kode_penyakit }}" name="kode_penyakit">
+                                    <input type="hidden" value="{{ $illness->nama_penyakit }}" name="nama_penyakit">
+                                    <input type="hidden" value="{{ $illness->penyebab_penyakit }}" name="penyebab_penyakit">
+                                    <input type="hidden" value="{{ $illness->solusi_penyakit }}" name="solusi_penyakit">
                                     <label for=""><i class="fa fa-users"></i> Nama</label>
                                     <input type="text" class="form-control" name="pengguna">
 

@@ -68,5 +68,7 @@ Route::prefix('user')->group(function () {
     Route::get('/home', [HomeController::class, 'home_user']);
 
     // Konsultasi 
+    Route::get('/konsultasi', [UserController::class, 'index_list']);
     Route::post('/konsultasi', [UserController::class, 'konsultasi']);
+    Route::post('/konsultasi-save', [UserController::class, 'simpanKonsultasi']);
 });

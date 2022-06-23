@@ -26,16 +26,23 @@
         </div>
         @endif
 
+		@auth
 		<a class="btn btn-outline-primary btn lg" data-toggle="modal" href="#tambahGejala" role="button">
 			Tambah Gejala
 		</a><hr>
+		@endauth
+
 		<table class="table table-hover table-bordered">
 			<thead class="text-light bg-primary">
 				<tr>
 					<th>Kode Gejala</th>
 					<th>Gambar</th>
-					<th>Nama Gejala</th>					
-					<th>Aksi</th>					
+					<th>Nama Gejala</th>
+					
+					@auth
+					<th>Aksi</th>	
+					@endauth
+									
 				</tr>
 			</thead>
 			<tbody>
@@ -46,6 +53,7 @@
 						<img width="50px" src="{{ asset('storage/'.$data->gambar_gejala) }}">
 					</td>
 					<td>{{ $data->nama_gejala }}</td>
+					@auth
 					<td>
 						<a class="btn btn-success" data-toggle="modal" href="#hapus{{ $data->id }}" >
 							<i class="fa fa-trash"></i>
@@ -55,6 +63,7 @@
 							<i class="fa fa-edit"></i>
 						</a>
 					</td>
+					@endauth
 				</tr>
 				@endforeach
 
