@@ -59,3 +59,6 @@ Apabila terjadi error saat mengakses url yang diberikan oleh laravel dan meminta
 ```
 php artisan key:generate
 ```
+
+
+Selamat Mencoba
