@@ -32,7 +32,12 @@ class UserController extends Controller
             {
                 $new_gejala = Gejala::where('kode_gejala', $rule->jika_ya)->first();
                 $data['symptom'] = $new_gejala;
-            }else{
+            }else if($key == "P"){
+                $penyakit = Penyakit::where('kode_penyakit', $rule->jika_ya)->first();
+
+                // Adding Illness
+                $data['illness'] = $penyakit;
+
                 return view('User/hasil_konsultasi', $data);
             }
 
@@ -40,13 +45,18 @@ class UserController extends Controller
         }else if($request->jika_tidak !== null)
         {
             // Checking code key
-            $key = substr($rule->jika_ya,0,1);
+            $key = substr($rule->jika_tidak,0,1);
 
             if($key == "G")
             {
                 $new_gejala = Gejala::where('kode_gejala', $rule->jika_tidak)->first();
                 $data['symptom'] = $new_gejala;
-            }else{
+            }else if($key == "P"){
+                $penyakit = Penyakit::where('kode_penyakit', $rule->jika_tidak)->first();
+
+                // Adding Illness
+                $data['illness'] = $penyakit;
+
                 return view('User/hasil_konsultasi', $data);
             }
 
