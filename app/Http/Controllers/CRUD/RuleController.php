@@ -13,7 +13,7 @@ class RuleController extends Controller
       
         $data = [
             "title" => "Rule",
-            "rules" => Aturan::al(),
+            "rules" => Aturan::all(),
             "illness" => Penyakit::all(),
             "symptoms" => Gejala::all()
         ];
