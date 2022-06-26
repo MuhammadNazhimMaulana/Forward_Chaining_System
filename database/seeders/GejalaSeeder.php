@@ -15,267 +15,171 @@ class GejalaSeeder extends Seeder
     public function run()
     {
         Gejala::create([
-            'kode_gejala' => 'G01',
-            'nama_gejala' => 'Bercak Kecil Pada Daun',
+            'kode_gejala' => 'G55',
+            'nama_gejala' => 'Terdapat seperti bisul berwarna putih dipermukaan daun',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/g_01.jpg',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G02',
-            'nama_gejala' => 'Bercak Bentuk Lonjong',
+            'kode_gejala' => 'G35',
+            'nama_gejala' => 'Warna hitam seperti beledu pada daun',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/clock-logo-clipart-best-20411.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G03',
-            'nama_gejala' => 'Bercak Bentuk Bulat',
+            'kode_gejala' => 'G36',
+            'nama_gejala' => 'Warna hitam seperti beledu pada buah',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/g_03..jpg',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G04',
-            'nama_gejala' => 'Bercak memanjang seperti corong atau perahu berwar',
+            'kode_gejala' => 'G37',
+            'nama_gejala' => 'Daun mangga kering dan keriting',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/clock-logo-clipart-best-204111.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G05',
-            'nama_gejala' => 'Terdapat serbuk berwarna orange dibagian bawah daun',
+            'kode_gejala' => 'G38',
+            'nama_gejala' => 'Terdapat bintik-bintik hitam pada daun, flush, malai dan buah',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/552813.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G06',
-            'nama_gejala' => 'Tidak terdapat serbuk berwarna orange dibagian bawah',
+            'kode_gejala' => 'G39',
+            'nama_gejala' => 'Kulit luar batang mangga terlihat pecah-pecah',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/552814.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G07',
-            'nama_gejala' => 'Terdapat klorosis pada daun',
+            'kode_gejala' => 'G40',
+            'nama_gejala' => 'Mengeluarkan getah cairan coklat kehitaman (bledok)',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/clock-logo-clipart-best-204115.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G08',
-            'nama_gejala' => 'Terdapat serbuk seperti tepung dipermukaan bawah daun',
+            'kode_gejala' => 'G41',
+            'nama_gejala' => 'Terdapat lubang yang mengeluarkan getah cairan berwarna coklat atau hitam',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/clock-logo-clipart-best-204116.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G09',
-            'nama_gejala' => 'Tidak terdapat serbuk seperti tepung dipermukaan batang',
+            'kode_gejala' => 'G42',
+            'nama_gejala' => 'Terdapat bercak seperti karat merah pada daun mangga',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/clock-logo-clipart-best-204117.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G10',
-            'nama_gejala' => 'Klorosis memanjang sejajar tulang daun',
+            'kode_gejala' => 'G43',
+            'nama_gejala' => 'Daun berbintik-bintik hitam menggulung',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/552815.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G11',
-            'nama_gejala' => 'Daun kuning dari bagian bawah ke atas berbentuk hu',
+            'kode_gejala' => 'G44',
+            'nama_gejala' => 'Buah busuk berwarna hitam',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/552816.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G12',
-            'nama_gejala' => 'Daun berwarna coklat seperti terbakar berbentuk hu',
+            'kode_gejala' => 'G45',
+            'nama_gejala' => 'Terdapat tanaman benalu yang menempel pada batang',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/552817.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G13',
-            'nama_gejala' => 'Pangkal daun berwarna kuning dan bergaris-garis pa',
+            'kode_gejala' => 'G46',
+            'nama_gejala' => 'Terdapat banyak kutu putih pada daun',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/552818.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G14',
-            'nama_gejala' => 'Kekurangan Fe yang tinggi maka seluruh daun menjad',
+            'kode_gejala' => 'G47',
+            'nama_gejala' => 'Kutu putih berbentuk oval, datar, tertutup lapisan tebal seperti lilin',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/552819.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G15',
-            'nama_gejala' => 'Daun berwarna hijau pucat, kuning bahkan putih pad',
+            'kode_gejala' => 'G48',
+            'nama_gejala' => 'Daun atau ranting berubah menjadi coklat',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/5528110.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G16',
-            'nama_gejala' => 'Pinggir daun berwarna ungu kemerahan dari ujung k',
+            'kode_gejala' => 'G49',
+            'nama_gejala' => 'Ranting dan daun mengering',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/5528111.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G17',
-            'nama_gejala' => 'Gejala nampak pada daun bagian bawah',
+            'kode_gejala' => 'G50',
+            'nama_gejala' => 'Buah mangga berlubang, busuk dan jatuh.',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/5528112.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G18',
-            'nama_gejala' => 'Gejala nampak pada daun bagian bawah',
+            'kode_gejala' => 'G51',
+            'nama_gejala' => 'Gejala nampak pada daun bagian bawah yang terdapat bercak putih',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/5528113.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G19',
-            'nama_gejala' => 'Tanaman terhambat pertumbuhannya',
+            'kode_gejala' => 'G52',
+            'nama_gejala' => 'Daun dan tunas menjadi kering',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/5528114.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G20',
-            'nama_gejala' => 'Busuk batang',
+            'kode_gejala' => 'G53',
+            'nama_gejala' => 'Buah membusuk dan tidak dapat dikonsumsi',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/5528115.png',
         ]);
 
         Gejala::create([
-            'kode_gejala' => 'G21',
-            'nama_gejala' => 'Terjadi patah pangkal batang',
+            'kode_gejala' => 'G54',
+            'nama_gejala' => 'Daun bolong-bolong',
             'penyebab_gejala' => '-',
             'solusi_gejala' => '-',
             'gambar_gejala' => 'Foto Gejala/5528116.png',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G22',
-            'nama_gejala' => 'Busuk terjadi pada ruas bawah batang',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/5528117.png',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G23',
-            'nama_gejala' => 'BBusuk tertutup oleh upih daun yang berwarna pucat',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/5528118.png',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G24',
-            'nama_gejala' => 'Jika batang dibelah tampak empulur lunak dan hancur',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/5528119.png',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G25',
-            'nama_gejala' => 'Tongkol kecil daripada normal',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/5528120.png',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G26',
-            'nama_gejala' => 'Ujung tongkol tidak berbiji',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/5528121.png',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G27',
-            'nama_gejala' => 'Tongkol sering bengkok',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/5528123.png',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G28',
-            'nama_gejala' => 'Pembentukan biji tidak sempurna',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/g_28.jpg',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G29',
-            'nama_gejala' => 'Biji jarang',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/5528125.png',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G30',
-            'nama_gejala' => 'Busuk tongkol',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/g_30.jpg',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G31',
-            'nama_gejala' => 'Busuk berwarna merah jambu atau kemerahan sampai c',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/g_31.jpg',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G32',
-            'nama_gejala' => 'Biji terdapat jamur berwarna putih sampai coklat k',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/g_32.jpg',
-        ]);
-
-        Gejala::create([
-            'kode_gejala' => 'G33',
-            'nama_gejala' => 'Biji membengkak menjadi hitam lalu pecah terhambur',
-            'penyebab_gejala' => '-',
-            'solusi_gejala' => '-',
-            'gambar_gejala' => 'Foto Gejala/g_33.jpg',
         ]);
     }
 }

@@ -15,165 +15,129 @@ class AturanSeeder extends Seeder
     public function run()
     {
         Aturan::create([
-            'kode_gejala' => 'G01',
-            'jika_ya' => 'G11',
-            'jika_tidak' => 'G11'
+            'kode_gejala' => 'G35',
+            'jika_ya' => 'G36',
+            'jika_tidak' => 'G36'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G11',
-            'jika_ya' => 'G12',
-            'jika_tidak' => 'G05'
+            'kode_gejala' => 'G36',
+            'jika_ya' => 'G37',
+            'jika_tidak' => 'G38'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G12',
-            'jika_ya' => 'G26',
-            'jika_tidak' => 'G13'
+            'kode_gejala' => 'G37',
+            'jika_ya' => 'P014',
+            'jika_tidak' => 'P014'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G26',
-            'jika_ya' => 'P008',
-            'jika_tidak' => 'P008'
+            'kode_gejala' => 'G38',
+            'jika_ya' => 'P015',
+            'jika_tidak' => 'G39'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G13',
-            'jika_ya' => 'G25',
-            'jika_tidak' => 'G05'
+            'kode_gejala' => 'G39',
+            'jika_ya' => 'G40',
+            'jika_tidak' => 'G41'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G05',
-            'jika_ya' => 'P006',
-            'jika_tidak' => 'G03'
+            'kode_gejala' => 'G40',
+            'jika_ya' => 'P016',
+            'jika_tidak' => 'P016'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G03',
-            'jika_ya' => 'G04',
-            'jika_tidak' => 'G07'
+            'kode_gejala' => 'G41',
+            'jika_ya' => 'P017',
+            'jika_tidak' => 'G42'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G04',
-            'jika_ya' => 'G06',
-            'jika_tidak' => 'G06'
+            'kode_gejala' => 'G42',
+            'jika_ya' => 'P018',
+            'jika_tidak' => 'G43'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G06',
-            'jika_ya' => 'P001',
-            'jika_tidak' => 'G18'
+            'kode_gejala' => 'G43',
+            'jika_ya' => 'G44',
+            'jika_tidak' => 'G45'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G15',
-            'jika_ya' => 'P001',
-            'jika_tidak' => 'G18'
+            'kode_gejala' => 'G44',
+            'jika_ya' => 'P019',
+            'jika_tidak' => 'P019'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G18',
-            'jika_ya' => 'P007',
-            'jika_tidak' => 'G21'
+            'kode_gejala' => 'G45',
+            'jika_ya' => 'P020',
+            'jika_tidak' => 'G46'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G21',
-            'jika_ya' => 'G30',
-            'jika_tidak' => 'G07'
+            'kode_gejala' => 'G46',
+            'jika_ya' => 'G47',
+            'jika_tidak' => 'G48'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G30',
-            'jika_ya' => 'G31',
-            'jika_tidak' => 'G31'
+            'kode_gejala' => 'G47',
+            'jika_ya' => 'P021',
+            'jika_tidak' => 'P021'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G31',
-            'jika_ya' => 'P003',
-            'jika_tidak' => 'P003'
+            'kode_gejala' => 'G48',
+            'jika_ya' => 'G49',
+            'jika_tidak' => 'G50'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G07',
-            'jika_ya' => 'G10',
-            'jika_tidak' => 'G32'
+            'kode_gejala' => 'G49',
+            'jika_ya' => 'P022',
+            'jika_tidak' => 'G51'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G10',
-            'jika_ya' => 'G12',
-            'jika_tidak' => 'G32'
+            'kode_gejala' => 'G50',
+            'jika_ya' => 'P023',
+            'jika_tidak' => 'G52'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G29',
-            'jika_ya' => 'P010',
-            'jika_tidak' => 'P010'
+            'kode_gejala' => 'G51',
+            'jika_ya' => 'P024',
+            'jika_tidak' => 'G52'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G14',
-            'jika_ya' => 'G15',
-            'jika_tidak' => 'P013'
+            'kode_gejala' => 'G52',
+            'jika_ya' => 'G53',
+            'jika_tidak' => 'G54'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G32',
-            'jika_ya' => 'G33',
-            'jika_tidak' => 'G02'
+            'kode_gejala' => 'G53',
+            'jika_ya' => 'P025',
+            'jika_tidak' => 'P025'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G33',
-            'jika_ya' => 'P004',
-            'jika_tidak' => 'G28'
+            'kode_gejala' => 'G54',
+            'jika_ya' => 'G55',
+            'jika_tidak' => 'G35'
         ]);
 
         Aturan::create([
-            'kode_gejala' => 'G28',
-            'jika_ya' => 'P005',
-            'jika_tidak' => 'P005'
-        ]);
-
-        Aturan::create([
-            'kode_gejala' => 'G02',
-            'jika_ya' => 'G08',
-            'jika_tidak' => 'G08'
-        ]);
-
-        Aturan::create([
-            'kode_gejala' => 'G08',
-            'jika_ya' => 'G19',
-            'jika_tidak' => 'G19'
-        ]);
-
-        Aturan::create([
-            'kode_gejala' => 'G19',
-            'jika_ya' => 'G25',
-            'jika_tidak' => 'G25'
-        ]);
-
-        Aturan::create([
-            'kode_gejala' => 'G25',
-            'jika_ya' => 'G28',
-            'jika_tidak' => 'G28'
-        ]);
-
-        Aturan::create([
-            'kode_gejala' => 'G27',
-            'jika_ya' => 'G16',
-            'jika_tidak' => 'P002'
-        ]);
-
-        Aturan::create([
-            'kode_gejala' => 'G16',
-            'jika_ya' => 'P009',
-            'jika_tidak' => 'P009'
+            'kode_gejala' => 'G55',
+            'jika_ya' => 'P026',
+            'jika_tidak' => 'P026'
         ]);
     }
 }
