@@ -17,7 +17,7 @@
 			<form action="/user/konsultasi" method="POST" role="form">
 				@csrf
 				{{-- Hidden Input --}}
-				<input type="hidden" name="kode_gejala" value="G35">
+				<input type="hidden" name="kode_gejala" value="G{{ $code }}">
 
 				<button type="submit" class="btn bg-transparent text-light"><h5 class="title">Konsul</h5></button>
 			</form>
