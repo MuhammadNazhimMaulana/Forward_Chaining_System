@@ -35,7 +35,7 @@ class HomeController extends Controller
         }
 
         $data = [
-            "title" => "Home",
+            "title" => "Home User",
             "code" => min($list_gejala)
         ];
 
