@@ -6,7 +6,7 @@
     <div class="container-login100">
         <div class="wrap-login100" >
             <div style="margin-left: 90px;" class="login100-pic js-tilt text-center" data-tilt>
-                <img width="1500px" src="{{ asset('login/images/img-01.png') }}" alt="IMG">
+                <img width="1500px" src="{{ asset('login/images/mango.png') }}" alt="IMG">
                 <h3>SP Tanaman Mangga</h3>
             </div>
 
