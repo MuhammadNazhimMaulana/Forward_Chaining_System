@@ -9,12 +9,14 @@ use Illuminate\Support\Facades\Storage;
 
 class PenyakitController extends Controller
 {
+    const PER_PAGE = 5;
+    
     public function index()
     {
       
         $data = [
             "title" => "Penyakit",
-            "illness" => Penyakit::all()
+            "illness" => Penyakit::paginate(self::PER_PAGE)
         ];
 
         return view('CRUD/Penyakit/index', $data);  

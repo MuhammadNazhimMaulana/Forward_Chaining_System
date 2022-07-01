@@ -9,12 +9,14 @@ use Illuminate\Support\Facades\Storage;
 
 class GejalaController extends Controller
 {
+    const PER_PAGE = 5;
+
     public function index()
     {
       
         $data = [
             "title" => "Gejala",
-            "symptoms" => Gejala::all()
+            "symptoms" => Gejala::paginate(self::PER_PAGE)
         ];
 
         return view('CRUD/Gejala/index', $data);  

@@ -45,7 +45,7 @@
                 <th>Gambar</th>
 
                 @auth
-                <th>Aksi</th>
+                <th class="col-2">Aksi</th>
                 @endauth
                 
             </tr>
@@ -57,7 +57,7 @@
                 <td>{{ $data->nama_penyakit }}</td>
                 <td>{{ $data->penyebab_penyakit }}</td>
                 <td>{{ $data->solusi_penyakit }}</td>
-                <td>
+                <td class="d-flex justify-content-center">
                     {{-- <a href="#g_" data-toggle="modal"> --}}
                     <img width="50px" src="{{ asset('storage/'.$data->gambar_penyakit) }}">
                     {{-- </a> --}}
@@ -75,6 +75,11 @@
                 @endauth
             </tr>
             @endforeach
+        </tbody>
+    </table>
+    
+        {{-- Pagination --}}
+        {{ $illness->links() }}
 
         {{-- Modals --}}
         @foreach ($illness as $data)
@@ -147,9 +152,7 @@
                 </div>
             </div>
             @endforeach
-        </tbody>
-    </table>	
-</div>
+        </div>
 
 
 

@@ -66,7 +66,13 @@
 					@endauth
 				</tr>
 				@endforeach
+			</tbody>
+		</table>
 
+{{-- Pagination --}}
+{{ $symptoms->links() }}
+
+{{-- Modals --}}
 @foreach ($symptoms as $data)
 			<div class="modal fade" id="hapus{{ $data->id }}">
 				<div class="modal-dialog">
@@ -127,12 +133,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			</tbody>
-		</table>	
+			</div>	
 	</div>
 	@endforeach
-
 
 @endsection
 

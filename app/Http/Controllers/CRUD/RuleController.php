@@ -8,12 +8,14 @@ use App\Models\{Penyakit, Gejala, Aturan};
 
 class RuleController extends Controller
 {
+    const PER_PAGE = 5;
+
     public function index()
     {
       
         $data = [
             "title" => "Rule",
-            "rules" => Aturan::all(),
+            "rules" => Aturan::paginate(self::PER_PAGE),
             "illness" => Penyakit::all(),
             "symptoms" => Gejala::all()
         ];
@@ -37,22 +39,22 @@ class RuleController extends Controller
 
     public function update_rule(Request $request, int $id)
     {
-        $penyakit = Penyakit::where('id', $id)->first();
+        $rule = Aturan::where('id', $id)->first();
 
         $validateRule = $request->validate([
-            'kode_gekala' => 'required',
+            'kode_gejala' => 'required',
             'jika_ya' => 'required',
             'jika_tidak' => 'required'
         ]);
 
 
-        Penyakit::where('id', $penyakit->id)
+        Aturan::where('id', $rule->id)
             ->update($validateRule);
 
         return redirect('/home/rule')->with('success_update', 'Rule Berhasil Diupdate');
     }
 
-    public function delete_penyakit(Aturan $rule, int $id)
+    public function delete_rule(Aturan $rule, int $id)
     {
         // Getting specific data
         $rule = $rule->where('id', $id)->first();
