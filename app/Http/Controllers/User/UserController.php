@@ -88,7 +88,7 @@ class UserController extends Controller
 
         // Adding Fields
         $konsultasi['waktu'] = $now->toDateString();
-        $konsultasi['kesimpulan'] = 'Tanaman Jagung mengalami penyakit '. $request->nama_penyakit.', yang di sebabkan oleh '. $request->penyebab_penyakit . ', penanggulangan bisa dilakukan dengan cara ' . $request->solusi_penyakit.'';
+        $konsultasi['kesimpulan'] = 'Tanaman Mangga mengalami penyakit '. $request->nama_penyakit.', yang di sebabkan oleh '. $request->penyebab_penyakit . ', penanggulangan bisa dilakukan dengan cara ' . $request->solusi_penyakit.'';
 
         Konsultasi::create($konsultasi);
 

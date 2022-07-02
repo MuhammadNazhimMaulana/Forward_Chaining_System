@@ -12,7 +12,7 @@
 						
 					</div>
 					<div class="col-lg-6">
-						<h6>Tanaman Jagung Anda Mengalami : </h6>
+						<h6>Tanaman Mangga Anda Mengalami : </h6>
 						<h2>{{ $illness->nama_penyakit }}</h2>
 						<h6>Di Sebabkan Oleh <strong>{{ $illness->penyebab_penyakit }}</strong> </h6>
 						<hr>

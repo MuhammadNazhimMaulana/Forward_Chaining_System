@@ -1,5 +1,5 @@
 <nav class="navbar row navbar-expand-lg navbar-dark bg-info">
-    <h3 class="text-light">SISTEM PAKAR PENYAKIT PADA TANAMAN JAGUNG</h3>
+    <h3 class="text-light">SISTEM PAKAR PENYAKIT PADA TANAMAN MANGGA</h3>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         
