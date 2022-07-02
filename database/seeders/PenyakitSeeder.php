@@ -117,5 +117,13 @@ class PenyakitSeeder extends Seeder
             'solusi_penyakit' => 'Membuang daun yang terserang hama dan membakarnya, membersihkan lingkungan, membalikkan tanah sekitar, semprot dengan racun anti serangga pada daun waktu sore hari',
             'gambar_penyakit' => 'Foto Penyakit/p26.jpg',
         ]);
+
+        Penyakit::create([
+            'kode_penyakit' => 'P027',
+            'nama_penyakit' => 'Penyakit Tidak Diketahui',
+            'penyebab_penyakit' => 'Tidak Diketahui',
+            'solusi_penyakit' => 'Tidak ditemukan penyakit. Tanaman Mangga Anda baik-baik saja',
+            'gambar_penyakit' => 'Foto Penyakit/unknown.png',
+        ]);
     }
 }

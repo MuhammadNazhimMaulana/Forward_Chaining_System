@@ -131,7 +131,7 @@ class AturanSeeder extends Seeder
         Aturan::create([
             'kode_gejala' => 'G54',
             'jika_ya' => 'G55',
-            'jika_tidak' => 'G35'
+            'jika_tidak' => 'P027'
         ]);
 
         Aturan::create([
