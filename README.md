@@ -5,7 +5,7 @@
 <br>
 <hr>
 
-### Instalasi
+### Instalasi atau Pemasangan
 
 - Pastikan untuk menggunakan PHP versi 7^
 - Siapkan XAMPP atau RDBMS Lainnya
