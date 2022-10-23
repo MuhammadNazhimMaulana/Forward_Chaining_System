@@ -1,0 +1,52 @@
+version: '3'
+services:
+
+  #APP SERVICES
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: forward_chaining_sistem
+    restart: unless-stopped
+    tty: true
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - fwd_chaining
+
+  #NGINX SERVICES
+  nginx:
+    image: nginx:alpine
+    container_name: forward_chaining_sistem_http
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8082:80"
+    volumes:
+      - ./:/var/www/html
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      # - ./nginx/ssl/:/etc/nginx/ssl/
+    networks:
+      - fwd_chaining
+
+  #MYSQL SERVICES
+  db:
+    image: mysql
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    container_name: forward_chaining_system_db
+    volumes:
+      - "./.mysql-data/db:/var/lib/mysql"
+    restart: unless-stopped
+    ports:
+      - 3319:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: forward_chaining
+    networks:
+      - fwd_chaining
+
+#DOCKER NETWORKS
+networks:
+  fwd_chaining:
+    driver: bridge
