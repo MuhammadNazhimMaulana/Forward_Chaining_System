@@ -60,5 +60,10 @@ Apabila terjadi error saat mengakses url yang diberikan oleh laravel dan meminta
 php artisan key:generate
 ```
 
+Untuk menjalankan dengan menggunakan docker silakan jalankan command
+
+```
+docker-compose up -d
+```
 
 Selamat Mencoba
